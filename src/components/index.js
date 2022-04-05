@@ -1,2 +1,2 @@
-export { Header } from "./Header";
+export { ArtistHeader } from "./Header";
 export { Albums } from "./Albums";
