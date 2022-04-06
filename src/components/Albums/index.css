@@ -1,56 +1,54 @@
-main{
-    height: 100vh;
+main {
+  height: 140vh;
 }
-.albums{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 0;
+.albums {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0;
 }
-.albums li{
-    list-style: none;
-    margin-right: 1rem;
-    width: 30%;
-    height: 30%;
-    margin-top: 1rem;
-}
-
-.cardHeader{
-    background-color: #ff5112;
-    opacity: 1.5;
-    padding: 1rem;
-    border-top-left-radius: 10px;
-    border-top-right-radius:10px ;
-}
-.cardHeader h2{
-    margin: 0;
-    color: #fff;
-}
-.cardImage{
-    height: 30%;
-    width: 100%;
+.albums li {
+  list-style: none;
+  margin-right: 1rem;
+  width: 30%;
+  height: 30%;
+  margin-top: 1rem;
 }
 
-@media screen and (max-width:1200px) {
-    .albums li{
-      
-        width: 40%;
-        height: 30%;
-    }
-    main{
-        padding-bottom: 10rem;
-    }
+.cardHeader {
+  background-color: #ff5112;
+  opacity: 1.5;
+  padding: 1rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
-@media screen and (max-width:950px) {
-    .albums li{
-      
-        width: 50%;
-        height: 30%;
-    }
-    .artistDetails{
-        text-align: center;
-    }   
-    main{
-        padding-bottom: 40rem;
-    }
+.cardHeader h2 {
+  margin: 0;
+  color: #fff;
+}
+.cardImage {
+  height: 30%;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .albums li {
+    width: 40%;
+    height: 30%;
+  }
+  main {
+    padding-bottom: 10rem;
+  }
+}
+@media screen and (max-width: 950px) {
+  .albums li {
+    width: 50%;
+    height: 30%;
+  }
+  .artistDetails {
+    text-align: center;
+  }
+  main {
+    padding-bottom: 40rem;
+  }
 }

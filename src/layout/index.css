@@ -1,16 +1,23 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #ccc;
+body {
+  background-color: #ccc;
 }
 
-h1,h2,p{
-    margin:1rem 0;
+h1,
+h2,
+p {
+  margin: 1rem 0;
 }
 
-.active{
-    background-color: #0000c0;
-    color: #ccc;
+.active {
+  background-color: #0000c0;
+  color: #ccc;
 }
