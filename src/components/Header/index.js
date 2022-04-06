@@ -1,6 +1,6 @@
 import React from "react";
 
-export function ArtistHeader({ name, type, description }) {
+export function ArtistHeading({ name, type, description }) {
   return (
     <header>
       <h1>Artist Name: {name}</h1>

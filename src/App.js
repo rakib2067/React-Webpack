@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import { ArtistHeader, Albums } from "./components";
-import { ArtistDetails } from "./pages/ArtistDetails";
+import { Albums } from "./components";
+import { ArtistDetails, ArtistHeader } from "./pages";
 import { Route, Routes } from "react-router-dom";
 import { Layout } from "./layout";
 
@@ -27,7 +27,14 @@ export default function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Layout />} />
+        <Route path="/" element={<Layout />}>
+          <Route path="/artists" element={<ArtistHeader />}>
+            <Route
+              path=":artistId"
+              element={<ArtistDetails artists={artists} />}
+            />
+          </Route>
+        </Route>
       </Routes>
     </>
   );

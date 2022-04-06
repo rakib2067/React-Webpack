@@ -9,7 +9,7 @@ export function Header() {
     <header className="header">
       <h1>Music App</h1>
       <ul className="links">
-        <NavLink to="/">Artists</NavLink>
+        <NavLink to="/artists">Artists</NavLink>
       </ul>
     </header>
   );
