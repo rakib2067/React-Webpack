@@ -9,20 +9,6 @@ import data from "./DummyData";
 
 export default function App() {
   const [artists, setArtists] = useState(data);
-  const renderArtists = () =>
-    artists.map((artist, i) => {
-      return (
-        <>
-          <Header
-            key={artist.id}
-            name={artist.name}
-            type={artist.type}
-            description={artist.description}
-          />
-          <Albums key={artist.name} albums={artists[i].albums} />;
-        </>
-      );
-    });
 
   return (
     <>

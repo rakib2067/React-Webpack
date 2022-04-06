@@ -7,7 +7,7 @@ import "./index.css";
 export function ArtistDetails({ artists }) {
   const { artistId } = useParams();
   const [artist, setArtist] = useState();
-  const [random, setRandom] = useState("#ccc");
+  const [random, setRandom] = useState("#000");
 
   useEffect(() => {
     setArtist(artists.find((a) => a.id == artistId));
@@ -27,9 +27,10 @@ export function ArtistDetails({ artists }) {
   return (
     <>
       {artist && (
-        <div style={{ backgroundColor: random }} className="artistDetails">
+        <div className="artistDetails">
           <ArtistHeading
             name={artist.name}
+            color={random}
             type={artist.type}
             description={artist.description}
           />

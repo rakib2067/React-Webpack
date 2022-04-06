@@ -12,7 +12,9 @@ export function Header() {
         Music App
       </h1>
       <ul className="links">
-        <NavLink to="/artists">Artists</NavLink>
+        <NavLink aria-label="link" to="/artists">
+          Artists
+        </NavLink>
       </ul>
     </header>
   );
