@@ -3,12 +3,30 @@
     display: flex;
     justify-content: space-between;
     background-color: tomato;
+    padding: 1.5rem;    
+    align-items: center;
 }
 
-.links {
-    display: flex;
-}
 
-.links li{
+
+.links a{
     list-style: none;
+    background-color: #3e3eff;
+    padding: 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: background .3s;
+}
+.links a:hover{
+    background-color: #0000c0;
+}
+
+.title{
+    color: #fff;
+    cursor: pointer;
+    transition: all .15s;
+}
+.title:hover{
+    text-shadow: 1px 1px 2px #ccc, 0 0 1em #ccc, 0 0 0.2em #ccc;
 }
