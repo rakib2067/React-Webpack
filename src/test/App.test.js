@@ -2,10 +2,15 @@ import { render } from "@testing-library/react";
 import { Footer } from "../layout/Footer";
 
 import { screen, within } from "@testing-library/react";
+import { BrowserRouter } from "react-router-dom";
 
 describe("App", () => {
   beforeEach(() => {
-    render(<Footer />);
+    render(
+      <BrowserRouter>
+        <Footer />
+      </BrowserRouter>
+    );
   });
 
   test("it renders the header footer with relevant text", () => {
